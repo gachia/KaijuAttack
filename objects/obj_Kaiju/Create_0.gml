@@ -21,9 +21,9 @@ growth = 0;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 6316255B
-/// @DnDArgument : "expr" "100"
+/// @DnDArgument : "expr" "20"
 /// @DnDArgument : "var" "max_growth"
-max_growth = 100;
+max_growth = 20;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -43,3 +43,13 @@ growth_status = "Tiny";
 /// @DnDHash : 2DFE22C9
 /// @DnDArgument : "var" "c_eaten"
 c_eaten = 0;
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 020C59F3
+/// @DnDArgument : "code" "image_speed = 0;$(13_10)hSpeed = 0;$(13_10)vSpeed = 0;$(13_10)speedWalk = 1.0;$(13_10)firingDelay = 0;"
+image_speed = 0;
+hSpeed = 0;
+vSpeed = 0;
+speedWalk = 1.0;
+firingDelay = 0;

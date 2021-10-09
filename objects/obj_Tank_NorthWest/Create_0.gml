@@ -8,8 +8,8 @@ firingDelay = 90;
 /// @DnDAction : YoYo Games.Paths.Start_Path
 /// @DnDVersion : 1.1
 /// @DnDHash : 09D45E98
-/// @DnDArgument : "path" "NorthWestPath"
+/// @DnDArgument : "path" "NorthEastPath"
 /// @DnDArgument : "speed" "0.5"
 /// @DnDArgument : "atend" "path_action_reverse"
-/// @DnDSaveInfo : "path" "NorthWestPath"
-path_start(NorthWestPath, 0.5, path_action_reverse, false);
+/// @DnDSaveInfo : "path" "NorthEastPath"
+path_start(NorthEastPath, 0.5, path_action_reverse, false);
