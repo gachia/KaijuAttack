@@ -36,7 +36,7 @@
     "path": "folders/Objects/Bullets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_Bullet",
+  "name": "obj_HeliBullet",
   "tags": [],
   "resourceType": "GMObject",
 }

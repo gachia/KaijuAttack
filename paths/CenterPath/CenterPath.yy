@@ -3,8 +3,8 @@
   "closed": false,
   "precision": 4,
   "points": [
-    {"speed":100.0,"x":480.0,"y":352.0,},
-    {"speed":100.0,"x":480.0,"y":736.0,},
+    {"speed":100.0,"x":480.0,"y":384.0,},
+    {"speed":100.0,"x":480.0,"y":704.0,},
   ],
   "parent": {
     "name": "KaijuAttack",

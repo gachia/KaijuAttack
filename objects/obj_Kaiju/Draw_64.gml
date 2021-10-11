@@ -60,7 +60,7 @@ draw_text(620, 55, string("Citizens Eaten: ") + string(c_eaten));
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 544E9332
-/// @DnDArgument : "code" "if (growth == 10 or growth == 11) {$(13_10)	draw_text(200, 250, "Kaiju now Gains the ability to Damage Tanks!\nPress the Space Bar to try out!\nCAUTION: Helicopter is coming!");$(13_10)}$(13_10)"
+/// @DnDArgument : "code" "if (growth == 10 or growth == 11) {$(13_10)	draw_text(200, 250, "The Kaiju has grown stronger!\nPress the Space Bar to use Fire Breath on the pesky Tanks!\nCAUTION: Helicopter is coming!");$(13_10)}$(13_10)"
 if (growth == 10 or growth == 11) {
-	draw_text(200, 250, "Kaiju now Gains the ability to Damage Tanks!\nPress the Space Bar to try out!\nCAUTION: Helicopter is coming!");
+	draw_text(200, 250, "The Kaiju has grown stronger!\nPress the Space Bar to use Fire Breath on the pesky Tanks!\nCAUTION: Helicopter is coming!");
 }

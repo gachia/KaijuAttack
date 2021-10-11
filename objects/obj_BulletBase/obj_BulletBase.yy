@@ -1,10 +1,7 @@
 {
-  "spriteId": {
-    "name": "InvisibleWall",
-    "path": "sprites/InvisibleWall/InvisibleWall.yy",
-  },
+  "spriteId": null,
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -24,11 +21,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Bullets",
+    "path": "folders/Objects/Bullets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_Wall",
+  "name": "obj_BulletBase",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,10 +1,11 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 0B945216
+/// @DnDDisabled : 1
 /// @DnDArgument : "expr" "-1"
 /// @DnDArgument : "expr_relative" "1"
 /// @DnDArgument : "var" "p_lives"
-p_lives += -1;
+
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1

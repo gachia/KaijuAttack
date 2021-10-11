@@ -53,6 +53,21 @@ if(growth_stage >= 1){
 		}
 	}
 }
+
+// Sliding wall
+if(place_meeting(x + hSpeed + 2, y, obj_Wall)){
+	hSpeed = 0;
+}
+else if(place_meeting(x + hSpeed - 2, y, obj_Wall)){
+	hSpeed = 0;
+}
+
+if(place_meeting(x, y + vSpeed + 2, obj_Wall)){
+    vSpeed = 0;
+}
+else if(place_meeting(x, y + vSpeed - 2, obj_Wall)){
+    vSpeed = 0;
+}
 x += hSpeed;
 y += vSpeed;
  
