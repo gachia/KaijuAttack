@@ -2,6 +2,10 @@
 if (x >= room_width-16) x = room_width-16;
 if (y >= room_height-16) y = room_height-16;
 
+// Temporary Invincibility
+counter++;
+if (counter == 1000) counter = 0;
+
 // Movement Code
 keyLeft = keyboard_check(vk_left);
 keyRight = keyboard_check(vk_right);
@@ -38,7 +42,7 @@ if(keyLeft && keyUp){
 
 // Attack 1: Fire Breath
 firingDelay -= 1;
-if(growth_stage >= 1){
+if(growth_stage == 1){
 	if (keyAttack1){
 		if (firingDelay < 0){
 			var _xx = x + lengthdir_x(40, image_angle-90);
@@ -48,6 +52,19 @@ if(growth_stage >= 1){
 				image_angle = direction - 90;
 				hspeed = other.hSpeed;
 				vspeed = other.vSpeed;
+			}
+			firingDelay = 35;
+		}
+	}
+}else if (growth_stage >= 2){
+	if (keyAttack1){
+		if (firingDelay < 0){
+			var _xx = x + lengthdir_x(40, image_angle-90);
+			var _yy = y + lengthdir_y(40, image_angle-90);
+			with(instance_create_layer(_xx, _yy, "Instances", obj_Fireball)){
+				direction = other.image_angle - 90;
+				image_angle = direction;
+				speed = 3.0;
 			}
 			firingDelay = 35;
 		}

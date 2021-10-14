@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_FireBase",
+    "path": "objects/obj_FireBase/obj_FireBase.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Bullets",
+    "path": "folders/Objects/Bullets.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_FireBreath",

@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 5,
-  "bbox_right": 15,
-  "bbox_top": 7,
-  "bbox_bottom": 12,
+  "bbox_left": 7,
+  "bbox_right": 19,
+  "bbox_top": 9,
+  "bbox_bottom": 17,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 20,
-  "height": 20,
+  "width": 28,
+  "height": 28,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"09f739a8-4101-48ae-8aad-a6d9b90cd946","path":"sprites/Citizen2/Citizen2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"09f739a8-4101-48ae-8aad-a6d9b90cd946","path":"sprites/Citizen2/Citizen2.yy",},"LayerId":{"name":"5d10de47-57d8-4d23-9164-ecff1103cf71","path":"sprites/Citizen2/Citizen2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Citizen2","path":"sprites/Citizen2/Citizen2.yy",},"resourceVersion":"1.0","name":"09f739a8-4101-48ae-8aad-a6d9b90cd946","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6556ee6f-559d-4923-887b-4a0a9de807a4","path":"sprites/Citizen2/Citizen2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6556ee6f-559d-4923-887b-4a0a9de807a4","path":"sprites/Citizen2/Citizen2.yy",},"LayerId":{"name":"13abe861-ce95-459b-bc89-ffdb286781e6","path":"sprites/Citizen2/Citizen2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Citizen2","path":"sprites/Citizen2/Citizen2.yy",},"resourceVersion":"1.0","name":"6556ee6f-559d-4923-887b-4a0a9de807a4","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"Citizen2","path":"sprites/Citizen2/Citizen2.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"49542d0a-3a0f-40b7-aa3e-fd4ba3533392","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"09f739a8-4101-48ae-8aad-a6d9b90cd946","path":"sprites/Citizen2/Citizen2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1e8585ee-16fd-403f-a157-268bf97baef6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6556ee6f-559d-4923-887b-4a0a9de807a4","path":"sprites/Citizen2/Citizen2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 10,
-    "yorigin": 10,
+    "xorigin": 14,
+    "yorigin": 14,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Citizen2","path":"sprites/Citizen2/Citizen2.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5d10de47-57d8-4d23-9164-ecff1103cf71","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"13abe861-ce95-459b-bc89-ffdb286781e6","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

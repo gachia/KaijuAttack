@@ -1,9 +1,16 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
+/// @DnDHash : 468EFC8F
+/// @DnDArgument : "expr" "2"
+/// @DnDArgument : "var" "h_lives"
+h_lives = 2;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
 /// @DnDHash : 467593CF
-/// @DnDArgument : "expr" "200"
+/// @DnDArgument : "expr" "260"
 /// @DnDArgument : "var" "distRange"
-distRange = 200;
+distRange = 260;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -15,16 +22,16 @@ firingRange = 300;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 4B56E531
-/// @DnDArgument : "expr" "30"
+/// @DnDArgument : "expr" "60"
 /// @DnDArgument : "var" "firingDelay"
-firingDelay = 30;
+firingDelay = 60;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 4F10706B
-/// @DnDArgument : "expr" "240"
+/// @DnDArgument : "expr" "300"
 /// @DnDArgument : "var" "reloadDelay"
-reloadDelay = 240;
+reloadDelay = 300;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

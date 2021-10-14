@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Spawners",
+    "path": "folders/Objects/Spawners.yy",
   },
   "resourceVersion": "1.0",
   "name": "Citizen2Spawner",
