@@ -26,3 +26,17 @@ if(h_lives == 0)
 	/// @DnDParent : 74BCD1D5
 	instance_destroy();
 }
+
+/// @DnDAction : YoYo Games.Common.Else
+/// @DnDVersion : 1
+/// @DnDHash : 1E4CBB86
+else
+{
+	/// @DnDAction : YoYo Games.Audio.Play_Audio
+	/// @DnDVersion : 1
+	/// @DnDHash : 3CAA9FFD
+	/// @DnDParent : 1E4CBB86
+	/// @DnDArgument : "soundid" "sound_HeliDamage"
+	/// @DnDSaveInfo : "soundid" "sound_HeliDamage"
+	audio_play_sound(sound_HeliDamage, 0, 0);
+}

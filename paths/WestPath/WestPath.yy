@@ -15,8 +15,8 @@
     {"speed":100.0,"x":192.0,"y":352.0,},
   ],
   "parent": {
-    "name": "KaijuAttack",
-    "path": "KaijuAttack.yyp",
+    "name": "Paths",
+    "path": "folders/Paths.yy",
   },
   "resourceVersion": "1.0",
   "name": "WestPath",
