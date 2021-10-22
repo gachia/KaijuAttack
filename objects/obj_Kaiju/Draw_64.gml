@@ -26,41 +26,76 @@ for(var i = 0; i < p_lives; i += 1) {
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 5AC6F5EA
+/// @DnDDisabled : 1
 /// @DnDArgument : "code" "var pc;$(13_10)pc = (growth/max_growth) * 100;$(13_10)draw_healthbar(670,40,785,50,pc,c_white, c_green, c_red, 0, true, false);"
-var pc;
-pc = (growth/max_growth) * 100;
-draw_healthbar(670,40,785,50,pc,c_white, c_green, c_red, 0, true, false);
+
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 01646344
+/// @DnDDisabled : 1
 /// @DnDArgument : "x" "550"
 /// @DnDArgument : "y" "10"
 /// @DnDArgument : "caption" ""Size: ""
 /// @DnDArgument : "var" "growth_status"
-draw_text(550, 10, string("Size: ") + string(growth_status));
+
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 175B85DB
+/// @DnDDisabled : 1
 /// @DnDArgument : "x" "610"
 /// @DnDArgument : "y" "34"
 /// @DnDArgument : "caption" ""Power: ""
-draw_text(610, 34, string("Power: ") + "");
+
+
+/// @DnDAction : YoYo Games.Drawing.Set_Color
+/// @DnDVersion : 1
+/// @DnDHash : 66D7B2DF
+/// @DnDArgument : "color" "$FF0000C6"
+/// @DnDArgument : "alpha" "false"
+draw_set_colour($FF0000C6 & $ffffff);draw_set_alpha(1);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
-/// @DnDHash : 4F606C8B
-/// @DnDArgument : "x" "620"
-/// @DnDArgument : "y" "55"
-/// @DnDArgument : "caption" ""Citizens Eaten: ""
-/// @DnDArgument : "var" "c_eaten"
-draw_text(620, 55, string("Citizens Eaten: ") + string(c_eaten));
+/// @DnDHash : 468606BE
+/// @DnDArgument : "x" "610"
+/// @DnDArgument : "y" "10"
+/// @DnDArgument : "caption" ""Lives: ""
+draw_text(610, 10, string("Lives: ") + "");
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Value
+/// @DnDVersion : 1
+/// @DnDHash : 5CFC83B5
+/// @DnDArgument : "x" "610"
+/// @DnDArgument : "y" "40"
+/// @DnDArgument : "caption" ""Ability: ""
+/// @DnDArgument : "var" "ability_status"
+draw_text(610, 40, string("Ability: ") + string(ability_status));
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 7CE76D35
+/// @DnDArgument : "var" "growth_stage"
+/// @DnDArgument : "op" "1"
+/// @DnDArgument : "value" "5"
+if(growth_stage < 5)
+{
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value
+	/// @DnDVersion : 1
+	/// @DnDHash : 4F606C8B
+	/// @DnDParent : 7CE76D35
+	/// @DnDArgument : "x" "610"
+	/// @DnDArgument : "y" "65"
+	/// @DnDArgument : "caption" ""Citizens Eaten: ""
+	/// @DnDArgument : "var" "c_eaten"
+	draw_text(610, 65, string("Citizens Eaten: ") + string(c_eaten));
+}
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 544E9332
-/// @DnDArgument : "code" "if (growth == 7 or growth == 8) {$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(140,140,700,220,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(150, 150, "You have grown stronger!\nPress the Space Bar to use Fire Breath on the pesky Tanks!\nCAUTION: Helicopter is coming!");$(13_10)}$(13_10)if(growth_stage == 2){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(190,90,600,200,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(200,100, "You have attain maximum power!\nYou can now move anywhere you please!\nYour Fire Breath has evolved into Fireball!\nUse it to destroy everything!");$(13_10)}$(13_10)$(13_10)if(growth_stage == 3){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(240,90,620,150,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(250,100, "WARNING! A HERO IS COMING TO STOP YOU!\nDEFEAT THEM TO UNLEASH ULTIMATE TERROR!");$(13_10)}$(13_10)$(13_10)// when boss spawns (dialogue)$(13_10)if(growth_stage == 4){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(260,330,550,390,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(270,350, "I'M HERE TO STOP YOU, MONSTER!");$(13_10)}$(13_10)$(13_10)$(13_10)"
+/// @DnDArgument : "code" "if (growth == 7 or growth == 8) {$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(140,140,700,220,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(150, 150, "You have grown stronger!\nPress the Space Bar to use Fire Breath on the pesky Tanks!\nCAUTION: Helicopter is coming!");$(13_10)}$(13_10)if(growth_stage == 2){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(190,90,600,200,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(200,100, "You have attain maximum power!\nYou can now move anywhere you please!\nYour Fire Breath has evolved into Fireball!\nUse it to destroy everything!");$(13_10)}$(13_10)$(13_10)if(growth_stage == 3){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(240,90,620,150,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(250,100, "WARNING! A HERO IS COMING TO STOP YOU!\nDEFEAT THEM TO UNLEASH ULTIMATE TERROR!");$(13_10)}$(13_10)$(13_10)// when boss spawns (dialogue)$(13_10)if(growth_stage == 4){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(220,340,610,410,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(230,350, "I'M HERE TO STOP YOU, MONSTER!\nDON'T TRY AND EAT MORE CITIZENS, MONSTER!");$(13_10)}$(13_10)$(13_10)$(13_10)"
 if (growth == 7 or growth == 8) {
 	draw_set_alpha(0.5);
 	draw_set_color(c_black);
@@ -91,8 +126,8 @@ if(growth_stage == 3){
 if(growth_stage == 4){
 	draw_set_alpha(0.5);
 	draw_set_color(c_black);
-	draw_rectangle(260,330,550,390,false);
+	draw_rectangle(220,340,610,410,false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
-	draw_text(270,350, "I'M HERE TO STOP YOU, MONSTER!");
+	draw_text(230,350, "I'M HERE TO STOP YOU, MONSTER!\nDON'T TRY AND EAT MORE CITIZENS, MONSTER!");
 }

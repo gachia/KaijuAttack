@@ -47,8 +47,8 @@ if(growth_stage >= 4)
 /// @DnDVersion : 1
 /// @DnDHash : 3991BA27
 /// @DnDArgument : "var" "growth"
-/// @DnDArgument : "value" "7"
-if(growth == 7)
+/// @DnDArgument : "value" "1"
+if(growth == 1)
 {
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -66,6 +66,14 @@ if(growth == 7)
 	/// @DnDArgument : "var" "growth_status"
 	growth_status = "Large";
 
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 203B6928
+	/// @DnDParent : 3991BA27
+	/// @DnDArgument : "expr" ""Fire Breath""
+	/// @DnDArgument : "var" "ability_status"
+	ability_status = "Fire Breath";
+
 	/// @DnDAction : YoYo Games.Instances.Sprite_Scale
 	/// @DnDVersion : 1
 	/// @DnDHash : 3E6B4853
@@ -79,9 +87,9 @@ if(growth == 7)
 	/// @DnDVersion : 1
 	/// @DnDHash : 474687E2
 	/// @DnDParent : 3991BA27
-	/// @DnDArgument : "expr" "1.2"
+	/// @DnDArgument : "expr" "1.3"
 	/// @DnDArgument : "var" "speedWalk"
-	speedWalk = 1.2;
+	speedWalk = 1.3;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -102,8 +110,8 @@ else
 	/// @DnDHash : 73636C47
 	/// @DnDParent : 5774688A
 	/// @DnDArgument : "var" "growth"
-	/// @DnDArgument : "value" "15"
-	if(growth == 15)
+	/// @DnDArgument : "value" "2"
+	if(growth == 2)
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -120,6 +128,14 @@ else
 		/// @DnDArgument : "expr" ""KAIJU""
 		/// @DnDArgument : "var" "growth_status"
 		growth_status = "KAIJU";
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 70F16132
+		/// @DnDParent : 73636C47
+		/// @DnDArgument : "expr" ""Fireball""
+		/// @DnDArgument : "var" "ability_status"
+		ability_status = "Fireball";
 	
 		/// @DnDAction : YoYo Games.Instances.Sprite_Scale
 		/// @DnDVersion : 1

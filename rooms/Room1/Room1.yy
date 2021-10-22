@@ -51,6 +51,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"Citizen2Spawner","path":"objects/Citizen2Spawner/Citizen2Spawner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":864.0,"resourceVersion":"1.0","name":"inst_7FE929F4","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"Citizen1Spawner","path":"objects/Citizen1Spawner/Citizen1Spawner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":928.0,"y":736.0,"resourceVersion":"1.0","name":"inst_1324F6CB","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"Citizen2Spawner","path":"objects/Citizen2Spawner/Citizen2Spawner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":800.0,"resourceVersion":"1.0","name":"inst_3282964F","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_Citizen1","path":"objects/obj_Citizen1/obj_Citizen1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":480.0,"y":800.0,"resourceVersion":"1.0","name":"inst_76000C3E","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":1300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Citizen_Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_Tank_East","path":"objects/obj_Tank_East/obj_Tank_East.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-90.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":480.0,"resourceVersion":"1.0","name":"inst_AA08340","tags":[],"resourceType":"GMRInstance",},
@@ -694,6 +695,7 @@
     {"name":"inst_1324F6CB","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_3282964F","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_47343821","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_76000C3E","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

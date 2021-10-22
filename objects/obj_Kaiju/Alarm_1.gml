@@ -5,6 +5,12 @@
 /// @DnDArgument : "var" "growth_stage"
 growth_stage = 4;
 
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 65E18B72
+/// @DnDArgument : "code" "instance_deactivate_all(true);"
+instance_deactivate_all(true);
+
 /// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1
 /// @DnDHash : 08FE5374

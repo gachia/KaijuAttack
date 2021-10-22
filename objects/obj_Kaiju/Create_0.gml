@@ -58,12 +58,19 @@ recently_hit = false;
 /// @DnDArgument : "var" "counter"
 counter = 0;
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 445A4642
+/// @DnDArgument : "expr" ""None""
+/// @DnDArgument : "var" "ability_status"
+ability_status = "None";
+
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 020C59F3
-/// @DnDArgument : "code" "image_speed = 0;$(13_10)hSpeed = 0;$(13_10)vSpeed = 0;$(13_10)speedWalk = 1.0;$(13_10)firingDelay = 0;"
+/// @DnDArgument : "code" "image_speed = 0;$(13_10)hSpeed = 0;$(13_10)vSpeed = 0;$(13_10)speedWalk = 1.1;$(13_10)firingDelay = 0;"
 image_speed = 0;
 hSpeed = 0;
 vSpeed = 0;
-speedWalk = 1.0;
+speedWalk = 1.1;
 firingDelay = 0;

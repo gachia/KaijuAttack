@@ -1,3 +1,8 @@
+// Temporary Invincibility
+counter++;
+if (counter == 1000) counter = 0;
+
+// 
 switch (state){
 	case heroStates.initial:
 		//do nothing and wait for alarm 0 (cutscene)
@@ -42,7 +47,7 @@ switch (state){
 		firingDelay = firingDelay - 1;
 		if (firingDelay < 0){
 			isCharged = true;
-			firingDelay = 90;
+			firingDelay = 210;
 			image_index = 3;
 			with (instance_create_layer(x,y,"Bullet_Instances", obj_EnergyBall)){
 				speed = 3.0;
