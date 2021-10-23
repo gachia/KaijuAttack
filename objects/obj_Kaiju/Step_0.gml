@@ -85,6 +85,22 @@ if(place_meeting(x, y + vSpeed + 2, obj_Wall)){
 else if(place_meeting(x, y + vSpeed - 2, obj_Wall)){
     vSpeed = 0;
 }
+
+// Animation
+if(recently_hit){
+	image_speed = 0;
+	sprite_index = Kaiju;
+	image_index = 1;
+}else if (abs(hSpeed) > 0 || abs(vSpeed) > 0){
+	image_speed = 1;
+	sprite_index = Kaiju_Walk;
+}else{
+	image_speed = 0;
+	sprite_index = Kaiju;
+	image_index = 0;
+	
+}
+
 x += hSpeed;
 y += vSpeed;
  

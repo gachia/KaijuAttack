@@ -14,7 +14,7 @@ isShootingBall = false;
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 4DE14875
-/// @DnDArgument : "code" "enum heroStates{$(13_10)	initial,$(13_10)	idle,$(13_10)	moveLeft,$(13_10)	moveRight,$(13_10)	shootBall,$(13_10)	shootLaser$(13_10)}$(13_10)$(13_10)state = heroStates.initial;$(13_10)stateTimer = 120;"
+/// @DnDArgument : "code" "enum heroStates{$(13_10)	initial,$(13_10)	idle,$(13_10)	moveLeft,$(13_10)	moveRight,$(13_10)	shootBall,$(13_10)	shootLaser$(13_10)}$(13_10)$(13_10)state = heroStates.initial;$(13_10)stateTimer = 120;$(13_10)$(13_10)var _xx = x;$(13_10)var _yy = y;"
 enum heroStates{
 	initial,
 	idle,
@@ -26,6 +26,9 @@ enum heroStates{
 
 state = heroStates.initial;
 stateTimer = 120;
+
+var _xx = x;
+var _yy = y;
 
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1

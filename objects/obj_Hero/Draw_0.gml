@@ -10,3 +10,7 @@ if (recently_hit){
 }else {
 	draw_self();
 }
+
+if (instance_exists(obj_Kaiju) && state==heroStates.shootLaser && !isChargedLaser){
+	draw_line_color(x,y, obj_Kaiju.x, obj_Kaiju.y, c_red, c_red);
+}

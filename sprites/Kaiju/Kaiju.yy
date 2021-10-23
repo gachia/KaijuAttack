@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 13,
-  "bbox_right": 484,
-  "bbox_top": 31,
-  "bbox_bottom": 465,
+  "bbox_left": 8,
+  "bbox_right": 41,
+  "bbox_top": 3,
+  "bbox_bottom": 46,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 500,
-  "height": 500,
+  "width": 50,
+  "height": 50,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8ec6d26a-a63d-4aea-9ca1-44af62c22740","path":"sprites/Kaiju/Kaiju.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8ec6d26a-a63d-4aea-9ca1-44af62c22740","path":"sprites/Kaiju/Kaiju.yy",},"LayerId":{"name":"2754d2b0-4335-4b0b-a378-59688da9e0d0","path":"sprites/Kaiju/Kaiju.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Kaiju","path":"sprites/Kaiju/Kaiju.yy",},"resourceVersion":"1.0","name":"8ec6d26a-a63d-4aea-9ca1-44af62c22740","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"11df8e47-b819-4418-b96b-9efc3a4b5a06","path":"sprites/Kaiju/Kaiju.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"11df8e47-b819-4418-b96b-9efc3a4b5a06","path":"sprites/Kaiju/Kaiju.yy",},"LayerId":{"name":"84ef252d-adac-4876-bdd6-ee7f83795f84","path":"sprites/Kaiju/Kaiju.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Kaiju","path":"sprites/Kaiju/Kaiju.yy",},"resourceVersion":"1.0","name":"11df8e47-b819-4418-b96b-9efc3a4b5a06","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"cdea96f9-65d9-41b5-b0d9-c8801c11ed9d","path":"sprites/Kaiju/Kaiju.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"cdea96f9-65d9-41b5-b0d9-c8801c11ed9d","path":"sprites/Kaiju/Kaiju.yy",},"LayerId":{"name":"84ef252d-adac-4876-bdd6-ee7f83795f84","path":"sprites/Kaiju/Kaiju.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Kaiju","path":"sprites/Kaiju/Kaiju.yy",},"resourceVersion":"1.0","name":"cdea96f9-65d9-41b5-b0d9-c8801c11ed9d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"Kaiju","path":"sprites/Kaiju/Kaiju.yy",},
@@ -36,12 +39,13 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 2.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"fec4b6ef-5353-45e8-9781-d23b6384e22f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8ec6d26a-a63d-4aea-9ca1-44af62c22740","path":"sprites/Kaiju/Kaiju.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f41a15ab-752b-4038-8820-1a608316e0a6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"11df8e47-b819-4418-b96b-9efc3a4b5a06","path":"sprites/Kaiju/Kaiju.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c676c33e-95e3-4a5e-aacd-1f7ac1ceca27","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cdea96f9-65d9-41b5-b0d9-c8801c11ed9d","path":"sprites/Kaiju/Kaiju.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,8 +58,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 250,
-    "yorigin": 250,
+    "xorigin": 25,
+    "yorigin": 25,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Kaiju","path":"sprites/Kaiju/Kaiju.yy",},
@@ -65,7 +69,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2754d2b0-4335-4b0b-a378-59688da9e0d0","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"84ef252d-adac-4876-bdd6-ee7f83795f84","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": {
     "left": 0,
