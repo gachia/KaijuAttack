@@ -22,8 +22,8 @@ if (l4E5FEAB3_0)
 	/// @DnDVersion : 1
 	/// @DnDHash : 3A8DBCBD
 	/// @DnDParent : 4E5FEAB3
-	/// @DnDArgument : "steps" "1800"
-	alarm_set(0, 1800);
+	/// @DnDArgument : "steps" "3600"
+	alarm_set(0, 3600);
 }
 
 /// @DnDAction : YoYo Games.Common.Else
@@ -35,6 +35,6 @@ else
 	/// @DnDVersion : 1
 	/// @DnDHash : 7C5D3A76
 	/// @DnDParent : 2A281342
-	/// @DnDArgument : "steps" "1800"
-	alarm_set(0, 1800);
+	/// @DnDArgument : "steps" "3600"
+	alarm_set(0, 3600);
 }

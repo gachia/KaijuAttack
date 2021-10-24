@@ -22,6 +22,7 @@ switch (state){
 		stateTimer -= 1;
 		if(stateTimer <= 0){
 			stateTimer = 120;
+			show_debug_message(laserCountdown);
 			if(laserCountdown <= 0){
 				state = heroStates.shootLaser;
 				audio_play_sound(sound_HeroCharging, 1, true);
@@ -38,6 +39,7 @@ switch (state){
 		stateTimer -= 1;
 		if(stateTimer <= 0){
 			stateTimer = 120;
+			show_debug_message(laserCountdown);
 			if(laserCountdown <= 0){
 				state = heroStates.shootLaser;
 				audio_play_sound(sound_HeroCharging, 1, true);
@@ -113,6 +115,7 @@ switch (state){
 					_xx = x;
 					_yy = y;
 					if(chargingLaserTimer > 210){
+						chargingLaserTimer = 0;
 						isChargedLaser = true;
 						audio_stop_sound(sound_HeroCharging);
 						audio_play_sound(sound_HeroLaser, 1, false);
