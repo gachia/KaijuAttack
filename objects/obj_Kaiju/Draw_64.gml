@@ -95,31 +95,33 @@ if(growth_stage < 5)
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 544E9332
-/// @DnDArgument : "code" "if (growth == 7 or growth == 8) {$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(140,140,700,220,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(150, 150, "You have grown stronger!\nPress the Space Bar to use Fire Breath on the pesky Tanks!\nCAUTION: Helicopter is coming!");$(13_10)}$(13_10)if(growth_stage == 2){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(190,90,600,200,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(200,100, "You have attain maximum power!\nYou can now move anywhere you please!\nYour Fire Breath has evolved into Fireball!\nUse it to destroy everything!");$(13_10)}$(13_10)$(13_10)if(growth_stage == 3){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(240,90,620,150,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(250,100, "WARNING! A HERO IS COMING TO STOP YOU!\nDEFEAT THEM TO UNLEASH ULTIMATE TERROR!");$(13_10)}$(13_10)$(13_10)// when boss spawns (dialogue)$(13_10)if(growth_stage == 4){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(220,340,610,410,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(230,350, "I'M HERE TO STOP YOU, MONSTER!\nDON'T TRY AND EAT MORE CITIZENS, MONSTER!");$(13_10)}$(13_10)$(13_10)$(13_10)"
+/// @DnDArgument : "code" "if (growth == 7 or growth == 8) {$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(260,140,550,220,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(270, 150, "You have grown stronger!\nFire Breath attack unlocked!\nCAUTION: Helicopter is coming!");$(13_10)}$(13_10)if(growth_stage == 2){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(280,90,560,180,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(290,100, "Maximum power achieved!\nFireball attack unlocked!\nUse it to destroy everything!");$(13_10)}$(13_10)$(13_10)if(growth_stage == 3){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(270,90,610,170,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(400,100, "WARNING!");$(13_10)	draw_text(280,120, "A HERO IS APPROACHING IN 15 SECONDS!");$(13_10)	draw_text(360,140, "PREPARE YOURSELF!");$(13_10)}$(13_10)$(13_10)// when boss spawns (dialogue)$(13_10)if(growth_stage == 4){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(220,340,610,410,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(230,350, "I'M HERE TO STOP YOU, MONSTER!\nDON'T TRY AND EAT MORE CITIZENS, MONSTER!");$(13_10)}$(13_10)$(13_10)$(13_10)"
 if (growth == 7 or growth == 8) {
 	draw_set_alpha(0.5);
 	draw_set_color(c_black);
-	draw_rectangle(140,140,700,220,false);
+	draw_rectangle(260,140,550,220,false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
-	draw_text(150, 150, "You have grown stronger!\nPress the Space Bar to use Fire Breath on the pesky Tanks!\nCAUTION: Helicopter is coming!");
+	draw_text(270, 150, "You have grown stronger!\nFire Breath attack unlocked!\nCAUTION: Helicopter is coming!");
 }
 if(growth_stage == 2){
 	draw_set_alpha(0.5);
 	draw_set_color(c_black);
-	draw_rectangle(190,90,600,200,false);
+	draw_rectangle(280,90,560,180,false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
-	draw_text(200,100, "You have attain maximum power!\nYou can now move anywhere you please!\nYour Fire Breath has evolved into Fireball!\nUse it to destroy everything!");
+	draw_text(290,100, "Maximum power achieved!\nFireball attack unlocked!\nUse it to destroy everything!");
 }
 
 if(growth_stage == 3){
 	draw_set_alpha(0.5);
 	draw_set_color(c_black);
-	draw_rectangle(240,90,620,150,false);
+	draw_rectangle(270,90,610,170,false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
-	draw_text(250,100, "WARNING! A HERO IS COMING TO STOP YOU!\nDEFEAT THEM TO UNLEASH ULTIMATE TERROR!");
+	draw_text(400,100, "WARNING!");
+	draw_text(280,120, "A HERO IS APPROACHING IN 15 SECONDS!");
+	draw_text(360,140, "PREPARE YOURSELF!");
 }
 
 // when boss spawns (dialogue)

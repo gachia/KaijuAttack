@@ -10,6 +10,6 @@ growth_stage = 3;
 /// @DnDVersion : 1
 /// @DnDHash : 50824D94
 /// @DnDComment : Set Alarm 1 which starts the boss battle
-/// @DnDArgument : "steps" "450"
+/// @DnDArgument : "steps" "750"
 /// @DnDArgument : "alarm" "1"
-alarm_set(1, 450);
+alarm_set(1, 750);
