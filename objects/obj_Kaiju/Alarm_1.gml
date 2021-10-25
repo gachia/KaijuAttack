@@ -25,7 +25,7 @@ hero = instance_create_layer(470, 150, "Hero_Instances", obj_Hero);
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 460CCB7A
-/// @DnDArgument : "code" "//camera_set_view_target(view_camera[1], hero);$(13_10)halfViewWidth = camera_get_view_width(view_camera[1]) / 2;$(13_10)halfViewHeight = camera_get_view_height(view_camera[1]) / 2;$(13_10)$(13_10)camera_set_view_pos(view_camera[1], hero.x - halfViewWidth, hero.y - halfViewHeight);$(13_10)view_visible[0] = false;$(13_10)view_visible[1] = true;"
+/// @DnDArgument : "code" "//camera_set_view_target(view_camera[1], hero);$(13_10)halfViewWidth = camera_get_view_width(view_camera[1]) / 2;$(13_10)halfViewHeight = camera_get_view_height(view_camera[1]) / 2;$(13_10)$(13_10)camera_set_view_pos(view_camera[1], hero.x - halfViewWidth, hero.y - halfViewHeight);$(13_10)view_visible[0] = false;$(13_10)view_visible[1] = true;$(13_10)$(13_10)audio_stop_sound(sound_BGM);$(13_10)audio_play_sound(sound_BossBGM, 1, true);$(13_10)"
 //camera_set_view_target(view_camera[1], hero);
 halfViewWidth = camera_get_view_width(view_camera[1]) / 2;
 halfViewHeight = camera_get_view_height(view_camera[1]) / 2;
@@ -33,6 +33,9 @@ halfViewHeight = camera_get_view_height(view_camera[1]) / 2;
 camera_set_view_pos(view_camera[1], hero.x - halfViewWidth, hero.y - halfViewHeight);
 view_visible[0] = false;
 view_visible[1] = true;
+
+audio_stop_sound(sound_BGM);
+audio_play_sound(sound_BossBGM, 1, true);
 
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1

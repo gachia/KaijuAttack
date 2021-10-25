@@ -56,6 +56,7 @@
     {"id":{"name":"RoadDownRight","path":"sprites/RoadDownRight/RoadDownRight.yy",},"order":1,},
     {"id":{"name":"obj_Tank_West","path":"objects/obj_Tank_West/obj_Tank_West.yy",},"order":9,},
     {"id":{"name":"obj_Citizen2","path":"objects/obj_Citizen2/obj_Citizen2.yy",},"order":4,},
+    {"id":{"name":"sound_BossBGM","path":"sounds/sound_BossBGM/sound_BossBGM.yy",},"order":14,},
     {"id":{"name":"Hero","path":"sprites/Hero/Hero.yy",},"order":0,},
     {"id":{"name":"onReturnMain","path":"scripts/onReturnMain/onReturnMain.yy",},"order":6,},
     {"id":{"name":"sound_HeliDamage","path":"sounds/sound_HeliDamage/sound_HeliDamage.yy",},"order":6,},

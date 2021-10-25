@@ -82,7 +82,7 @@ switch (state){
 
 			if (ammo <= 0){
 				isChargedBall = false;
-				ammo = 5;
+				ammo = 3;
 				laserCountdown--;
 				state = heroStates.idle;
 			}
