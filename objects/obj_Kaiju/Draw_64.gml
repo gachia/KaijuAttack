@@ -1,3 +1,19 @@
+/// @DnDAction : YoYo Games.Drawing.Set_Font
+/// @DnDVersion : 1
+/// @DnDHash : 03E5CEFF
+/// @DnDArgument : "font" "Font1"
+/// @DnDSaveInfo : "font" "Font1"
+draw_set_font(Font1);
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 2CFC304B
+/// @DnDArgument : "code" "draw_set_alpha(0.5);$(13_10)draw_set_color(c_black);$(13_10)draw_roundrect(600,5,790,90,false);$(13_10)draw_set_alpha(1.0);"
+draw_set_alpha(0.5);
+draw_set_color(c_black);
+draw_roundrect(600,5,790,90,false);
+draw_set_alpha(1.0);
+
 /// @DnDAction : YoYo Games.Loops.For_Loop
 /// @DnDVersion : 1
 /// @DnDHash : 260226B6
@@ -9,8 +25,8 @@ for(var i = 0; i < p_lives; i += 1) {
 	/// @DnDHash : 4C1912B2
 	/// @DnDParent : 260226B6
 	/// @DnDArgument : "var" "_xx"
-	/// @DnDArgument : "value" "gui_w-40-(i*30)"
-	var _xx = gui_w-40-(i*30);
+	/// @DnDArgument : "value" "gui_w-130+(i*30)"
+	var _xx = gui_w-130+(i*30);
 
 	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
 	/// @DnDVersion : 1
@@ -52,9 +68,8 @@ for(var i = 0; i < p_lives; i += 1) {
 /// @DnDAction : YoYo Games.Drawing.Set_Color
 /// @DnDVersion : 1
 /// @DnDHash : 66D7B2DF
-/// @DnDArgument : "color" "$FF0000C6"
 /// @DnDArgument : "alpha" "false"
-draw_set_colour($FF0000C6 & $ffffff);draw_set_alpha(1);
+draw_set_colour($FFFFFFFF & $ffffff);draw_set_alpha(1);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
@@ -95,14 +110,14 @@ if(growth_stage < 5)
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 544E9332
-/// @DnDArgument : "code" "if (growth == 7 or growth == 8) {$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(260,140,550,220,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(270, 150, "You have grown stronger!\nFire Breath attack unlocked!\nCAUTION: Helicopter is coming!");$(13_10)}$(13_10)if(growth_stage == 2){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(280,90,560,180,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(290,100, "Maximum power achieved!\nFireball attack unlocked!\nUse it to destroy everything!");$(13_10)}$(13_10)$(13_10)if(growth_stage == 3){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(270,90,610,170,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(400,100, "WARNING!");$(13_10)	draw_text(280,120, "A HERO IS APPROACHING IN 15 SECONDS!");$(13_10)	draw_text(360,140, "PREPARE YOURSELF!");$(13_10)}$(13_10)$(13_10)// when boss spawns (dialogue)$(13_10)if(growth_stage == 4){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(220,340,610,410,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(230,350, "I'M HERE TO STOP YOU, MONSTER!\nDON'T TRY AND EAT MORE CITIZENS, MONSTER!");$(13_10)}$(13_10)$(13_10)$(13_10)"
-if (growth == 7 or growth == 8) {
+/// @DnDArgument : "code" "if (growth == 1 or growth == 8) {$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(260,140,580,220,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(270, 150, "You have grown stronger.\nFire Breath attack unlocked.\nCAUTION: A Helicopter is coming.");$(13_10)}$(13_10)if(growth_stage == 2){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(280,90,560,180,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(290,100, "Maximum power achieved.\nFireball attack unlocked.\nUse it to destroy everything.");$(13_10)}$(13_10)$(13_10)if(growth_stage == 3){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(220,110,630,190,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(360,120, "WARNING");$(13_10)	draw_text(230,140, "A HERO IS APPROACHING IN 15 SECONDS.");$(13_10)	draw_text(320,160, "PREPARE YOURSELF.");$(13_10)}$(13_10)$(13_10)// when boss spawns (dialogue)$(13_10)if(growth_stage == 4){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_roundrect(230,340,600,410,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(240,350, "I'M HERE TO STOP YOU, MONSTER.\nDON'T TRY AND EAT MORE CITIZENS.");$(13_10)}$(13_10)$(13_10)$(13_10)"
+if (growth == 1 or growth == 8) {
 	draw_set_alpha(0.5);
 	draw_set_color(c_black);
-	draw_rectangle(260,140,550,220,false);
+	draw_rectangle(260,140,580,220,false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
-	draw_text(270, 150, "You have grown stronger!\nFire Breath attack unlocked!\nCAUTION: Helicopter is coming!");
+	draw_text(270, 150, "You have grown stronger.\nFire Breath attack unlocked.\nCAUTION: A Helicopter is coming.");
 }
 if(growth_stage == 2){
 	draw_set_alpha(0.5);
@@ -110,26 +125,26 @@ if(growth_stage == 2){
 	draw_rectangle(280,90,560,180,false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
-	draw_text(290,100, "Maximum power achieved!\nFireball attack unlocked!\nUse it to destroy everything!");
+	draw_text(290,100, "Maximum power achieved.\nFireball attack unlocked.\nUse it to destroy everything.");
 }
 
 if(growth_stage == 3){
 	draw_set_alpha(0.5);
 	draw_set_color(c_black);
-	draw_rectangle(270,90,610,170,false);
+	draw_rectangle(220,110,630,190,false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
-	draw_text(400,100, "WARNING!");
-	draw_text(280,120, "A HERO IS APPROACHING IN 15 SECONDS!");
-	draw_text(360,140, "PREPARE YOURSELF!");
+	draw_text(360,120, "WARNING");
+	draw_text(230,140, "A HERO IS APPROACHING IN 15 SECONDS.");
+	draw_text(320,160, "PREPARE YOURSELF.");
 }
 
 // when boss spawns (dialogue)
 if(growth_stage == 4){
 	draw_set_alpha(0.5);
 	draw_set_color(c_black);
-	draw_rectangle(220,340,610,410,false);
+	draw_roundrect(230,340,600,410,false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
-	draw_text(230,350, "I'M HERE TO STOP YOU, MONSTER!\nDON'T TRY AND EAT MORE CITIZENS, MONSTER!");
+	draw_text(240,350, "I'M HERE TO STOP YOU, MONSTER.\nDON'T TRY AND EAT MORE CITIZENS.");
 }

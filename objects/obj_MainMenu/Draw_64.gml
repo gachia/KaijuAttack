@@ -1,16 +1,6 @@
-/// @DnDAction : YoYo Games.Drawing.Set_Color
+/// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1
-/// @DnDHash : 1378FC19
-/// @DnDArgument : "color" "$FF0000FF"
-/// @DnDArgument : "alpha" "false"
-draw_set_colour($FF0000FF & $ffffff);draw_set_alpha(1);
-
-/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
-/// @DnDVersion : 1
-/// @DnDHash : 01E91DC2
-/// @DnDArgument : "x" "300"
-/// @DnDArgument : "y" "100"
-/// @DnDArgument : "xscale" "2"
-/// @DnDArgument : "yscale" "2"
-/// @DnDArgument : "caption" ""Kaiju Attack""
-draw_text_transformed(300, 100, string("Kaiju Attack") + "", 2, 2, 0);
+/// @DnDHash : 04782375
+/// @DnDArgument : "font" "Font1"
+/// @DnDSaveInfo : "font" "Font1"
+draw_set_font(Font1);

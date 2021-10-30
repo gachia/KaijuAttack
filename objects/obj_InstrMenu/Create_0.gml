@@ -1,4 +1,4 @@
-var _width = 300;
-var _height = 50;
+var _width = 250;
+var _height = 30;
 
-createButton(250, 500, _width, _height, "Return", onReturnMain);
+createButton(260, 550, _width, _height, "Return", onReturnMain);

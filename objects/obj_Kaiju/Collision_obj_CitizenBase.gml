@@ -55,8 +55,8 @@ if(growth_stage >= 2)
 /// @DnDVersion : 1
 /// @DnDHash : 3991BA27
 /// @DnDArgument : "var" "growth"
-/// @DnDArgument : "value" "1"
-if(growth == 1)
+/// @DnDArgument : "value" "7"
+if(growth == 7)
 {
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -126,8 +126,8 @@ else
 	/// @DnDHash : 73636C47
 	/// @DnDParent : 5774688A
 	/// @DnDArgument : "var" "growth"
-	/// @DnDArgument : "value" "2"
-	if(growth == 2)
+	/// @DnDArgument : "value" "15"
+	if(growth == 15)
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
