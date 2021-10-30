@@ -2,11 +2,12 @@
 /// @DnDVersion : 1
 /// @DnDHash : 280AE205
 /// @DnDComment : Alarm 3 is for changing back the view$(13_10)from Hero to Player
-/// @DnDArgument : "code" "view_visible[1] = false;$(13_10)view_visible[0] = true;$(13_10)$(13_10)instance_activate_all();"
+/// @DnDArgument : "code" "view_visible[1] = false;$(13_10)view_visible[0] = true;$(13_10)$(13_10)instance_activate_all();$(13_10)inputEnabled = true;"
 view_visible[1] = false;
 view_visible[0] = true;
 
 instance_activate_all();
+inputEnabled = true;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

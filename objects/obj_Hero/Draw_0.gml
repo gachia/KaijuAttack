@@ -12,5 +12,11 @@ if (recently_hit){
 }
 
 if (instance_exists(obj_Kaiju) && state==heroStates.shootLaser && !isChargedLaser){
-	draw_line_color(x,y, obj_Kaiju.x, obj_Kaiju.y, c_red, c_red);
+	if(chargingLaserTimer < 180){
+		draw_line_color(x,y, obj_Kaiju.x, obj_Kaiju.y, c_red, c_red);
+		_tempx = obj_Kaiju.x;
+		_tempy = obj_Kaiju.y;
+	}else{
+		draw_line_color(x,y, _tempx, _tempy, c_red, c_red);
+	}
 }

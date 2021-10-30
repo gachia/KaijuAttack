@@ -7,12 +7,13 @@ counter++;
 if (counter == 1000) counter = 0;
 
 // Movement Code
-keyLeft = keyboard_check(vk_left);
-keyRight = keyboard_check(vk_right);
-keyUp = keyboard_check(vk_up);
-keyDown = keyboard_check(vk_down);
-keyAttack1 = keyboard_check_pressed(vk_space);
-
+if (inputEnabled){
+	keyLeft = keyboard_check(vk_left);
+	keyRight = keyboard_check(vk_right);
+	keyUp = keyboard_check(vk_up);
+	keyDown = keyboard_check(vk_down);
+	keyAttack1 = keyboard_check_pressed(vk_space);
+}
 
 inputDirection = point_direction(0, 0, keyRight-keyLeft, keyDown-keyUp);
 inputMagnitude = (keyRight-keyLeft != 0) || (keyDown - keyUp != 0);
@@ -72,19 +73,20 @@ if(growth_stage == 1){
 }
 
 // Sliding wall
-if(place_meeting(x + hSpeed + 2, y, obj_Wall)){
-	hSpeed = 0;
+/*
+if(place_meeting(x + hSpeed, y, obj_Wall)){
+	x -= hSpeed;
 }
-else if(place_meeting(x + hSpeed - 2, y, obj_Wall)){
-	hSpeed = 0;
+else if(place_meeting(x - hSpeed, y, obj_Wall)){
+	x += hSpeed;
 }
 
-if(place_meeting(x, y + vSpeed + 2, obj_Wall)){
-    vSpeed = 0;
+if(place_meeting(x, y + hSpeed, obj_Wall)){
+	y -= vSpeed;
 }
-else if(place_meeting(x, y + vSpeed - 2, obj_Wall)){
-    vSpeed = 0;
-}
+else if(place_meeting(x, y - hSpeed, obj_Wall)){
+    y += vSpeed;
+}*/
 
 // Animation
 if(recently_hit){

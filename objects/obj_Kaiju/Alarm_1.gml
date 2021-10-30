@@ -8,8 +8,11 @@ growth_stage = 4;
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 65E18B72
-/// @DnDArgument : "code" "instance_deactivate_all(true);"
+/// @DnDArgument : "code" "instance_deactivate_all(true);$(13_10)inputEnabled = false;$(13_10)hSpeed = 0;$(13_10)vSpeed = 0;"
 instance_deactivate_all(true);
+inputEnabled = false;
+hSpeed = 0;
+vSpeed = 0;
 
 /// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1
@@ -40,6 +43,6 @@ audio_play_sound(sound_BossBGM, 1, true);
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1
 /// @DnDHash : 42C873BD
-/// @DnDArgument : "steps" "150"
+/// @DnDArgument : "steps" "240"
 /// @DnDArgument : "alarm" "3"
-alarm_set(3, 150);
+alarm_set(3, 240);

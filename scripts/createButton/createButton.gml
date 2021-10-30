@@ -10,7 +10,7 @@ function createButton(x, y, width, height, text, script)
 	var _script = script;
 	
 	// Create Button
-	var _button = instance_create_layer(_x, _y, "Instances", obj_Button);
+	var _button = instance_create_depth(_x, _y, -1000, obj_Button);
 	
 	// Set Values
 	_button.width = _width;

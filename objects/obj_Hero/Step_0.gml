@@ -21,7 +21,7 @@ switch (state){
 
 		stateTimer -= 1;
 		if(stateTimer <= 0){
-			stateTimer = 120;
+			stateTimer = 150;
 			show_debug_message(laserCountdown);
 			if(laserCountdown <= 0){
 				state = heroStates.shootLaser;
@@ -38,7 +38,7 @@ switch (state){
 		
 		stateTimer -= 1;
 		if(stateTimer <= 0){
-			stateTimer = 120;
+			stateTimer = 150;
 			show_debug_message(laserCountdown);
 			if(laserCountdown <= 0){
 				state = heroStates.shootLaser;
@@ -58,7 +58,7 @@ switch (state){
 	
 			firingDelay = firingDelay - 1;
 			if (firingDelay < 0){
-				isCharged = true;
+				isChargedBall = true;
 				firingDelay = 180;
 				image_index = 3;
 				with (instance_create_layer(x,y,"Bullet_Instances", obj_EnergyBall)){
@@ -108,10 +108,13 @@ switch (state){
 						state = heroStates.idle;
 					}
 				}else{
+					//tracking
 					image_index = 2;
 					chargingLaserTimer++;
-					direction = point_direction(x,y,obj_Kaiju.x + 5, obj_Kaiju.y + 5);
-					image_angle = direction + 90;
+					if(chargingLaserTimer < 180){
+						direction = point_direction(x,y,obj_Kaiju.x + 5, obj_Kaiju.y + 5);
+						image_angle = direction + 90;
+					}
 					_xx = x;
 					_yy = y;
 					if(chargingLaserTimer > 210){

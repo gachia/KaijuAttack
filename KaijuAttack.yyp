@@ -29,6 +29,7 @@
     {"id":{"name":"FireBreath","path":"sprites/FireBreath/FireBreath.yy",},"order":17,},
     {"id":{"name":"Map","path":"sprites/Map/Map.yy",},"order":8,},
     {"id":{"name":"obj_Tank_NorthWest","path":"objects/obj_Tank_NorthWest/obj_Tank_NorthWest.yy",},"order":10,},
+    {"id":{"name":"onReturn","path":"scripts/onReturn/onReturn.yy",},"order":7,},
     {"id":{"name":"obj_Tank_SouthEast","path":"objects/obj_Tank_SouthEast/obj_Tank_SouthEast.yy",},"order":12,},
     {"id":{"name":"RoadDownLeft","path":"sprites/RoadDownLeft/RoadDownLeft.yy",},"order":0,},
     {"id":{"name":"InvisibleWall","path":"sprites/InvisibleWall/InvisibleWall.yy",},"order":12,},
