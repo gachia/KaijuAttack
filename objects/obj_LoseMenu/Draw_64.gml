@@ -19,3 +19,10 @@ draw_set_colour($FF000066 & $ffffff);draw_set_alpha(1);
 /// @DnDArgument : "y" "100"
 /// @DnDArgument : "caption" ""Defeat""
 draw_text_transformed(300, 100, string("Defeat") + "", 1, 1, 0);
+
+/// @DnDAction : YoYo Games.Drawing.Set_Font
+/// @DnDVersion : 1
+/// @DnDHash : 4160D5E5
+/// @DnDArgument : "font" "Font1"
+/// @DnDSaveInfo : "font" "Font1"
+draw_set_font(Font1);
