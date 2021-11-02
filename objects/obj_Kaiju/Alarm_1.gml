@@ -8,11 +8,11 @@ growth_stage = 4;
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 65E18B72
-/// @DnDArgument : "code" "instance_deactivate_all(true);$(13_10)inputEnabled = false;$(13_10)hSpeed = 0;$(13_10)vSpeed = 0;"
-instance_deactivate_all(true);
+/// @DnDArgument : "code" "inputEnabled = false;$(13_10)hSpeed = 0;$(13_10)vSpeed = 0;$(13_10)instance_deactivate_all(true);"
 inputEnabled = false;
 hSpeed = 0;
 vSpeed = 0;
+instance_deactivate_all(true);
 
 /// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1

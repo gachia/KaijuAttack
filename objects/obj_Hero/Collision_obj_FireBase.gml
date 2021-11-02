@@ -41,8 +41,9 @@ if(!(recently_hit))
 		/// @DnDHash : 4B471C02
 		/// @DnDParent : 32275071
 		/// @DnDArgument : "objectid" "obj_WinMenu"
+		/// @DnDArgument : "layer" ""Menu_Instances""
 		/// @DnDSaveInfo : "objectid" "obj_WinMenu"
-		instance_create_layer(0, 0, "Instances", obj_WinMenu);
+		instance_create_layer(0, 0, "Menu_Instances", obj_WinMenu);
 	}
 
 	/// @DnDAction : YoYo Games.Common.Variable
