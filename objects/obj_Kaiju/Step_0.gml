@@ -105,6 +105,8 @@ if(recently_hit){
 	
 }
 
-x += hSpeed;
-y += vSpeed;
+if(growth_stage !=4){
+	x += hSpeed;
+	y += vSpeed;
+}
  

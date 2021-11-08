@@ -8,10 +8,10 @@ draw_set_font(Font1);
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 2CFC304B
-/// @DnDArgument : "code" "draw_set_alpha(0.5);$(13_10)draw_set_color(c_black);$(13_10)draw_roundrect(600,5,790,90,false);$(13_10)draw_set_alpha(1.0);"
-draw_set_alpha(0.5);
+/// @DnDArgument : "code" "draw_set_alpha(0.4);$(13_10)draw_set_color(c_black);$(13_10)draw_roundrect(580,5,795,90,false);$(13_10)draw_set_alpha(1.0);"
+draw_set_alpha(0.4);
 draw_set_color(c_black);
-draw_roundrect(600,5,790,90,false);
+draw_roundrect(580,5,795,90,false);
 draw_set_alpha(1.0);
 
 /// @DnDAction : YoYo Games.Loops.For_Loop
@@ -25,8 +25,8 @@ for(var i = 0; i < p_lives; i += 1) {
 	/// @DnDHash : 4C1912B2
 	/// @DnDParent : 260226B6
 	/// @DnDArgument : "var" "_xx"
-	/// @DnDArgument : "value" "gui_w-130+(i*30)"
-	var _xx = gui_w-130+(i*30);
+	/// @DnDArgument : "value" "gui_w-140+(i*33)"
+	var _xx = gui_w-140+(i*33);
 
 	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
 	/// @DnDVersion : 1
@@ -74,19 +74,19 @@ draw_set_colour($FFFFFFFF & $ffffff);draw_set_alpha(1);
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 468606BE
-/// @DnDArgument : "x" "610"
-/// @DnDArgument : "y" "10"
+/// @DnDArgument : "x" "590"
+/// @DnDArgument : "y" "12"
 /// @DnDArgument : "caption" ""Lives: ""
-draw_text(610, 10, string("Lives: ") + "");
+draw_text(590, 12, string("Lives: ") + "");
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 5CFC83B5
-/// @DnDArgument : "x" "610"
+/// @DnDArgument : "x" "590"
 /// @DnDArgument : "y" "40"
 /// @DnDArgument : "caption" ""Ability: ""
 /// @DnDArgument : "var" "ability_status"
-draw_text(610, 40, string("Ability: ") + string(ability_status));
+draw_text(590, 40, string("Ability: ") + string(ability_status));
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
@@ -100,38 +100,38 @@ if(growth_stage < 5)
 	/// @DnDVersion : 1
 	/// @DnDHash : 4F606C8B
 	/// @DnDParent : 7CE76D35
-	/// @DnDArgument : "x" "610"
+	/// @DnDArgument : "x" "590"
 	/// @DnDArgument : "y" "65"
 	/// @DnDArgument : "caption" ""Citizens Eaten: ""
 	/// @DnDArgument : "var" "c_eaten"
-	draw_text(610, 65, string("Citizens Eaten: ") + string(c_eaten));
+	draw_text(590, 65, string("Citizens Eaten: ") + string(c_eaten));
 }
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 544E9332
-/// @DnDArgument : "code" "if (isFirstDiagUp) {$(13_10)	draw_set_alpha(0.3);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(260,140,580,220,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(270, 150, "You have grown stronger.\nFire Breath attack unlocked.\nCAUTION: A Helicopter is coming.");$(13_10)}$(13_10)if(growth_stage == 2){$(13_10)	draw_set_alpha(0.3);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(280,90,560,180,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(290,100, "Maximum power achieved.\nFireball attack unlocked.\nUse it to destroy everything.");$(13_10)}$(13_10)$(13_10)if(growth_stage == 3){$(13_10)	draw_set_alpha(0.3);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(220,110,630,190,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(360,120, "WARNING");$(13_10)	draw_text(230,140, "A HERO IS APPROACHING IN 15 SECONDS.");$(13_10)	draw_text(320,160, "PREPARE YOURSELF.");$(13_10)}$(13_10)$(13_10)// when boss spawns (dialogue)$(13_10)if(growth_stage == 4){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_roundrect(140,340,680,410,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(240,350, "I'M HERE TO STOP YOU, MONSTER.");$(13_10)	draw_text(150,370, "DON'T TRY TO EAT MORE CITIZENS TO REGAIN HEALTH");$(13_10)}$(13_10)$(13_10)$(13_10)"
+/// @DnDArgument : "code" "if (isFirstDiagUp) {$(13_10)	draw_set_alpha(0.3);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(240,140,580,220,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(250, 150, "You have grown stronger.\nFire Breath attack unlocked.\nCAUTION: A Helicopter is coming.");$(13_10)}$(13_10)if(growth_stage == 2){$(13_10)	draw_set_alpha(0.3);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(250,110,560,180,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(260,120, "Maximum power achieved.\nFireball attack unlocked.\nUse it to destroy everything.");$(13_10)}$(13_10)$(13_10)if(growth_stage == 3){$(13_10)	draw_set_alpha(0.3);$(13_10)	draw_set_color(c_black);$(13_10)	draw_rectangle(220,110,595,190,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(360,120, "WARNING");$(13_10)	draw_text(230,140, "A HERO IS APPROACHING IN 15 SECONDS.");$(13_10)	draw_text(320,160, "PREPARE YOURSELF.");$(13_10)}$(13_10)$(13_10)// when boss spawns (dialogue)$(13_10)if(growth_stage == 4){$(13_10)	draw_set_alpha(0.5);$(13_10)	draw_set_color(c_black);$(13_10)	draw_roundrect(140,340,650,410,false);$(13_10)	draw_set_alpha(1);$(13_10)	draw_set_color(c_white);$(13_10)	draw_text(250,350, "I'M HERE TO STOP YOU, MONSTER.");$(13_10)	draw_text(160,370, "DON'T TRY TO EAT MORE CITIZENS TO REGAIN HEALTH.");$(13_10)}$(13_10)$(13_10)$(13_10)"
 if (isFirstDiagUp) {
 	draw_set_alpha(0.3);
 	draw_set_color(c_black);
-	draw_rectangle(260,140,580,220,false);
+	draw_rectangle(240,140,580,220,false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
-	draw_text(270, 150, "You have grown stronger.\nFire Breath attack unlocked.\nCAUTION: A Helicopter is coming.");
+	draw_text(250, 150, "You have grown stronger.\nFire Breath attack unlocked.\nCAUTION: A Helicopter is coming.");
 }
 if(growth_stage == 2){
 	draw_set_alpha(0.3);
 	draw_set_color(c_black);
-	draw_rectangle(280,90,560,180,false);
+	draw_rectangle(250,110,560,180,false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
-	draw_text(290,100, "Maximum power achieved.\nFireball attack unlocked.\nUse it to destroy everything.");
+	draw_text(260,120, "Maximum power achieved.\nFireball attack unlocked.\nUse it to destroy everything.");
 }
 
 if(growth_stage == 3){
 	draw_set_alpha(0.3);
 	draw_set_color(c_black);
-	draw_rectangle(220,110,630,190,false);
+	draw_rectangle(220,110,595,190,false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
 	draw_text(360,120, "WARNING");
@@ -143,9 +143,9 @@ if(growth_stage == 3){
 if(growth_stage == 4){
 	draw_set_alpha(0.5);
 	draw_set_color(c_black);
-	draw_roundrect(140,340,680,410,false);
+	draw_roundrect(140,340,650,410,false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
-	draw_text(240,350, "I'M HERE TO STOP YOU, MONSTER.");
-	draw_text(150,370, "DON'T TRY TO EAT MORE CITIZENS TO REGAIN HEALTH");
+	draw_text(250,350, "I'M HERE TO STOP YOU, MONSTER.");
+	draw_text(160,370, "DON'T TRY TO EAT MORE CITIZENS TO REGAIN HEALTH.");
 }

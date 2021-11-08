@@ -123,9 +123,9 @@ if(growth == 7)
 	/// @DnDVersion : 1
 	/// @DnDHash : 2E9FFDAC
 	/// @DnDParent : 3991BA27
-	/// @DnDArgument : "steps" "room_speed * 5"
+	/// @DnDArgument : "steps" "room_speed * 8"
 	/// @DnDArgument : "alarm" "4"
-	alarm_set(4, room_speed * 5);
+	alarm_set(4, room_speed * 8);
 }
 
 /// @DnDAction : YoYo Games.Common.Else
