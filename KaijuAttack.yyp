@@ -109,6 +109,7 @@
     {"id":{"name":"EnergyBall","path":"sprites/EnergyBall/EnergyBall.yy",},"order":2,},
     {"id":{"name":"Explosion","path":"sprites/Explosion/Explosion.yy",},"order":7,},
     {"id":{"name":"onResume","path":"scripts/onResume/onResume.yy",},"order":9,},
+    {"id":{"name":"EscapeKey","path":"sprites/EscapeKey/EscapeKey.yy",},"order":24,},
     {"id":{"name":"obj_Tank_SouthWest","path":"objects/obj_Tank_SouthWest/obj_Tank_SouthWest.yy",},"order":7,},
     {"id":{"name":"onInstructions","path":"scripts/onInstructions/onInstructions.yy",},"order":5,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
