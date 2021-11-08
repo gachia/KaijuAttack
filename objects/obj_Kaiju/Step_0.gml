@@ -56,7 +56,7 @@ if(growth_stage == 1){
 				hspeed = other.hSpeed;
 				vspeed = other.vSpeed;
 			}
-			firingDelay = 35;
+			firingDelay = room_speed*0.6;
 		}
 	}
 }else if (growth_stage >= 2){
@@ -69,7 +69,7 @@ if(growth_stage == 1){
 				image_angle = direction;
 				speed = 3.0;
 			}
-			firingDelay = 35;
+			firingDelay = room_speed*0.6;
 		}
 	}
 }
